@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — Imposter Detector</title>
+  <meta name="description" content="Terms of Service for Imposter Detector Discord bot.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    :root{--bg:#07070f;--bg2:#0d0d1a;--surface:#141428;--text:#e8e8f4;--muted:#7a7a9e;--accent:#5865F2;--glow:rgba(88,101,242,.25);--green:#43b581;--red:#f04747}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 24px;background:rgba(7,7,15,.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.04)}
+    .nav-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+    .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:800;font-size:1.05rem}
+    .nav-btn{background:var(--accent);color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:600;font-size:.9rem;text-decoration:none;transition:transform .2s,box-shadow .2s}
+    .nav-btn:hover{transform:translateY(-2px);box-shadow:0 4px 20px var(--glow);text-decoration:none}
+
+    .content{max-width:760px;margin:0 auto;padding:120px 24px 80px}
+    .content h1{font-size:2.2rem;font-weight:900;margin-bottom:8px}
+    .updated{color:var(--muted);font-size:.9rem;margin-bottom:48px}
+    .content h2{font-size:1.3rem;font-weight:800;margin-top:48px;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .content p{color:var(--muted);margin-bottom:16px;font-size:.95rem}
+    .content ul{list-style:none;margin-bottom:16px}
+    .content ul li{padding:6px 0;font-size:.93rem;color:var(--muted)}
+
+    footer{padding:40px 0;border-top:1px solid rgba(255,255,255,.04);text-align:center}
+    .footer-inner{max-width:760px;margin:0 auto;padding:0 24px}
+    .footer-links{display:flex;justify-content:center;gap:24px;margin-bottom:14px}
+    .footer-links a{color:var(--muted);font-size:.85rem}
+    .footer-links a:hover{color:var(--accent)}
+    .footer-copy{font-size:.78rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">🛡️ Imposter Detector</a>
+      <a href="https://discord.com/discovery/applications/1494239558110543882" class="nav-btn" target="_blank" rel="noopener">Add to Discord</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <h1>Terms of Service</h1>
+    <p class="updated">Last updated: April 16, 2026</p>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>By adding Imposter Detector to your Discord server, you agree to these terms.</p>
+
+    <h2>2. Service Description</h2>
+    <p>Imposter Detector is a Discord bot that detects potential impersonation attempts by comparing member profiles (usernames, display names, avatars) against a list of protected members configured by server administrators.</p>
+
+    <h2>3. Data Collection</h2>
+    <p>The bot collects and stores:</p>
+    <ul>
+      <li>📁 <strong>Server IDs</strong> and configuration settings (channels, thresholds)</li>
+      <li>👤 <strong>User IDs</strong> of protected and whitelisted members</li>
+      <li>📊 <strong>Detection logs</strong> including user IDs, similarity scores, and actions taken</li>
+      <li>🖼️ <strong>Avatar images</strong> are processed in memory for comparison but are <strong>not stored</strong></li>
+    </ul>
+    <p>The bot does <strong>not</strong> collect:</p>
+    <ul>
+      <li>❌ Message content</li>
+      <li>❌ Voice data</li>
+      <li>❌ DM content</li>
+      <li>❌ Any data from servers where the bot is not installed</li>
+    </ul>
+
+    <h2>4. Data Usage</h2>
+    <p>All collected data is used solely for the purpose of detecting and preventing impersonation. Data is never sold, shared with third parties, or used for advertising.</p>
+
+    <h2>5. Data Retention</h2>
+    <ul>
+      <li>📋 Detection logs are retained indefinitely for audit purposes</li>
+      <li>🗑️ Server configuration is deleted when the bot is removed from a server</li>
+      <li>📧 Users can request data deletion by contacting the bot developer</li>
+    </ul>
+
+    <h2>6. User Responsibilities</h2>
+    <p>Server administrators are responsible for:</p>
+    <ul>
+      <li>⚙️ Configuring the bot appropriately for their server</li>
+      <li>👁️ Reviewing detection alerts before taking action</li>
+      <li>⚠️ Ensuring auto-kick/ban settings are appropriate for their community</li>
+    </ul>
+
+    <h2>7. Limitation of Liability</h2>
+    <p>Imposter Detector is provided "as is" without warranty. The developer is not liable for any incorrect detections, wrongful kicks/bans, or other actions taken by the bot.</p>
+
+    <h2>8. Changes to Terms</h2>
+    <p>These terms may be updated at any time. Continued use of the bot constitutes acceptance of updated terms.</p>
+
+    <h2>9. Contact</h2>
+    <p>For questions or data deletion requests, open an issue on the <a href="https://github.com/cmartin81/imposterDetector">GitHub repository</a>.</p>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+      <p class="footer-copy">© 2026 Imposter Detector. Not affiliated with Discord Inc.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

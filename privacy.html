@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Imposter Detector</title>
+  <meta name="description" content="Privacy Policy for Imposter Detector Discord bot. Learn what data we collect, how we use it, and how to request deletion.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    :root{--bg:#07070f;--bg2:#0d0d1a;--surface:#141428;--text:#e8e8f4;--muted:#7a7a9e;--accent:#5865F2;--glow:rgba(88,101,242,.25);--green:#43b581;--red:#f04747}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 24px;background:rgba(7,7,15,.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.04)}
+    .nav-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+    .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:800;font-size:1.05rem}
+    .nav-btn{background:var(--accent);color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:600;font-size:.9rem;text-decoration:none;transition:transform .2s,box-shadow .2s}
+    .nav-btn:hover{transform:translateY(-2px);box-shadow:0 4px 20px var(--glow);text-decoration:none}
+
+    .content{max-width:760px;margin:0 auto;padding:120px 24px 80px}
+    .content h1{font-size:2.2rem;font-weight:900;margin-bottom:8px}
+    .updated{color:var(--muted);font-size:.9rem;margin-bottom:48px}
+    .content h2{font-size:1.3rem;font-weight:800;margin-top:48px;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .content p{color:var(--muted);margin-bottom:16px;font-size:.95rem}
+    .content ul{list-style:none;margin-bottom:16px}
+    .content ul li{padding:6px 0;font-size:.93rem;color:var(--muted)}
+
+    .data-table{width:100%;border-collapse:collapse;margin:16px 0 24px;border-radius:12px;overflow:hidden}
+    .data-table th{background:var(--surface);text-align:left;padding:12px 16px;font-size:.85rem;font-weight:700;color:var(--text);border-bottom:1px solid rgba(255,255,255,.06)}
+    .data-table td{padding:12px 16px;font-size:.88rem;color:var(--muted);border-bottom:1px solid rgba(255,255,255,.04)}
+    .data-table tr:last-child td{border-bottom:none}
+    .data-table tr:hover td{background:rgba(88,101,242,.04)}
+
+    footer{padding:40px 0;border-top:1px solid rgba(255,255,255,.04);text-align:center}
+    .footer-inner{max-width:760px;margin:0 auto;padding:0 24px}
+    .footer-links{display:flex;justify-content:center;gap:24px;margin-bottom:14px}
+    .footer-links a{color:var(--muted);font-size:.85rem}
+    .footer-links a:hover{color:var(--accent)}
+    .footer-copy{font-size:.78rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">🛡️ Imposter Detector</a>
+      <a href="https://discord.com/discovery/applications/1494239558110543882" class="nav-btn" target="_blank" rel="noopener">Add to Discord</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: April 16, 2026</p>
+
+    <h2>What data we collect</h2>
+    <table class="data-table">
+      <thead>
+        <tr><th>Data</th><th>Purpose</th><th>Stored?</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Server ID</td><td>Identify your server's configuration</td><td>✅ Yes</td></tr>
+        <tr><td>Channel IDs</td><td>Send alerts to the right channels</td><td>✅ Yes</td></tr>
+        <tr><td>User IDs (protected/whitelisted)</td><td>Know who to protect and who to skip</td><td>✅ Yes</td></tr>
+        <tr><td>Detection logs (user IDs + scores)</td><td>Audit trail for moderation actions</td><td>✅ Yes</td></tr>
+        <tr><td>Avatar images</td><td>Compare for impersonation</td><td>❌ Processed in memory only</td></tr>
+        <tr><td>Usernames &amp; display names</td><td>Compare for similarity</td><td>✅ In detection logs</td></tr>
+      </tbody>
+    </table>
+
+    <h2>What we do NOT collect</h2>
+    <ul>
+      <li>❌ Message content</li>
+      <li>❌ Voice or video data</li>
+      <li>❌ DM conversations</li>
+      <li>❌ Data from servers where the bot is not installed</li>
+      <li>❌ IP addresses or location data</li>
+    </ul>
+
+    <h2>How we use your data</h2>
+    <p>All data is used <strong>exclusively</strong> for detecting impersonation attempts. We do not:</p>
+    <ul>
+      <li>❌ Sell data to third parties</li>
+      <li>❌ Use data for advertising</li>
+      <li>❌ Share data with anyone outside the bot's functionality</li>
+    </ul>
+
+    <h2>Data storage</h2>
+    <p>Data is stored in a secure PostgreSQL database. Access is limited to the bot developer.</p>
+
+    <h2>Data deletion</h2>
+    <ul>
+      <li>🗑️ <strong>Remove the bot</strong> from your server to stop all data collection</li>
+      <li>📦 Server configuration is retained after removal in case you re-add the bot</li>
+      <li>📧 To request full data deletion, open an issue on the <a href="https://github.com/cmartin81/imposterDetector">GitHub repository</a> or contact the developer</li>
+    </ul>
+
+    <h2>Children's privacy</h2>
+    <p>Imposter Detector does not knowingly collect data from children under 13. The bot operates within Discord's own age-restricted platform.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>This policy may be updated at any time. Changes will be reflected in the "Last updated" date above.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy questions or data deletion requests, open an issue on <a href="https://github.com/cmartin81/imposterDetector">GitHub</a>.</p>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+      <p class="footer-copy">© 2026 Imposter Detector. Not affiliated with Discord Inc.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
