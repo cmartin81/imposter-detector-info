@@ -57,10 +57,8 @@
     .visual-wrapper img{width:100%;display:block}
 
     /* ── MASCOT ROW ── */
-    .mascot-row{display:flex;align-items:center;justify-content:center;gap:32px;padding:60px 0 0;flex-wrap:wrap}
-    .mascot-img{width:120px;height:120px;object-fit:contain;filter:drop-shadow(0 0 20px rgba(88,101,242,.3));animation:float 3s ease-in-out infinite}
-    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-    .mascot-text{max-width:400px}
+    .mascot-row{display:flex;align-items:center;justify-content:center;padding:60px 0 0;text-align:center}
+    .mascot-text{max-width:500px}
     .mascot-text h3{font-size:1.2rem;font-weight:800;margin-bottom:6px}
     .mascot-text p{color:var(--muted);font-size:.95rem}
 
@@ -157,10 +155,8 @@
       .visual-section{padding:0 0 40px}
       .visual-wrapper{border-radius:16px;margin:0 8px}
 
-      /* Mascot — hide image only on mobile, keep text */
-      .mascot-row{flex-direction:column;text-align:center;gap:16px;padding:40px 0 0}
-      .mascot-img{display:none}
-      .mascot-text h3{font-size:1.1rem}
+      /* Mascot text */
+      .mascot-row{padding:30px 0 0}
       .mascot-text p{font-size:.88rem}
 
       /* Attacks */
@@ -238,7 +234,6 @@
         <img src="img/hero-spot.png" alt="Spot the Imposter — real vs fake profile comparison showing how the bot detects impersonators">
       </div>
       <div class="mascot-row fade-in">
-        <img src="img/mascot.png" alt="Imposter Detector mascot" class="mascot-img">
         <div class="mascot-text">
           <h3>Can you tell the difference?</h3>
           <p>Imposters use stolen avatars, unicode character swaps, and brand-new accounts. Our AI catches what the human eye can't — in milliseconds.</p>
