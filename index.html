@@ -157,8 +157,11 @@
       .visual-section{padding:0 0 40px}
       .visual-wrapper{border-radius:16px;margin:0 8px}
 
-      /* Hide mascot on mobile */
-      .mascot-row{display:none}
+      /* Mascot — hide image only on mobile, keep text */
+      .mascot-row{flex-direction:column;text-align:center;gap:16px;padding:40px 0 0}
+      .mascot-img{display:none}
+      .mascot-text h3{font-size:1.1rem}
+      .mascot-text p{font-size:.88rem}
 
       /* Attacks */
       .attacks{padding:60px 0}
